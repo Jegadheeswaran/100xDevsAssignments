@@ -9,5 +9,16 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    const currDate = new Date();
+    for(let i=1;i<=n;i++){
+
+    }
+    const updatedDate = new Date();
+    return currDate-updatedDate;
 }
+let n =100;
+console.log("Seconds to take to get sum from 1 to "+n+": "+calculateTime(n));
+n =100000;
+console.log("Seconds to take to get sum from 1 to "+n+": "+calculateTime(n));
+n=1000000000;
+console.log("Seconds to take to get sum from 1 to "+n+": "+calculateTime(n));
